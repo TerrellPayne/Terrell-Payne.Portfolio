@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <title>Terrell Payne</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="assets/javascript/script.js"></script>
+</head>
+
+<body>
+    <section class="d-flex flex-column justify-content-center align-content-center" id="home">
+        <div class="text-center mx-auto p-4" id="home-content">
+            <h1>
+                Hi! I'm <span class="text-primary">Terrell Payne</span>.<br>
+                I'm a web developer.
+            </h1>
+            <button class="mx-auto my-2 p-3" id="btn-view-work">View my work <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="d-flex flex-column justify-content-between align-content-center bg-white" id="about">
+        <div class="container">
+            <h2 class="text-center display-4">ABOUT</h2>
+            <div class="row py-4">
+                <div class="col-md-8">
+                    <h3 class="my-2">About Me</h3>
+                    <p>I am a fullstack web developer based in Northeast Ohio. I have earned a Bachelor's in Computer
+                        and Information Science from Cleveland State University, and am currently attending Case
+                        Western's Web Development Bootcamp.</p>
+                    <p>I have a lifelong passion for making the world a happier place with technology, and strive to
+                        learn something new every single day.</p>
+                    <h3 class="my-2">Skills</h3>
+                    <p><strong>Front End: </strong> <br> HTML, CSS, Bootstrap, JavaScript, jQuery, Reactjs</p>
+                    <p><strong>Back End: </strong> <br> Google Firebase, Node.js, Express, Handlebars, MySQL, Sequelize,
+                        MongoDB</p>
+                    <p><strong>Developer Tools: </strong> <br> Git/GitHub, Heroku, Postman</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img class="img-fluid mx-auto" id="profile-img" src="assets/images/profile.jpeg"
+                        alt="Terrell Payne">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="d-flex flex-column justify-content-between align-content-center bg-light" id="portfolio">
+        <div class="container">
+            <h2 class="text-center display-4">PROJECTS</h2>
+            <div class="row pt-4 pb-md-4">
+                <div class="col-lg-4 col-md-6 px-0">
+                    <div class="card project">
+                        <img class="card-img" src="assets/images/unit-4-game.png" alt="unit-4-game">
+                        <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
+                            <h5 class="card-title">Unit-4-game</h5>
+                            <p class="card-text text-secondary">HTML, CSS, jQuery, JavaScript</p>
+                            <button class="btn-learn-more w-50 mx-auto" data-project="unit4Game">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 px-0">
+                    <div class="card project">
+                        <img class="card-img" src="assets/images/clickyGame.png" alt="Clicky Game">
+                        <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
+                            <h5 class="card-title">Clicky Game</h5>
+                            <p class="card-text text-secondary">Group Project, Node, Express, MySQL, Handlebars,
+                                Sequelize</p>
+                            <button class="btn-learn-more w-50 mx-auto" data-project="clickyGame">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 px-0">
+                    <div class="card project">
+                        <img class="card-img" src="assets/images/captionThis.png" alt="Caption This">
+                        <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
+                            <h5 class="card-title">Caption This</h5>
+                            <p class="card-text text-secondary">Node, Express, MySQL, Reactjs, jQuery, JavaScript, SASS</p>
+                            <button class="btn-learn-more w-50 mx-auto" data-project="captionThis">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 px-0">
+                    <div class="card project">
+                        <img class="card-img" src="assets/images/fireFighterFriend.png" alt="TinFur">
+                        <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
+                            <h5 class="card-title">Firefighter Helper</h5>
+                            <p class="card-text text-secondary">Group project, Bootstrap, jQuery, jQuery Mobile,
+                                Firebase</p>
+                            <button class="btn-learn-more w-50 mx-auto" data-project="firefighterHelper">Learn
+                                More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="d-flex flex-column justify-content-between align-content-center" id="contact">
+        <div class="container">
+            <h2 class="text-center display-4">CONTACT</h2>
+            <div class="row py-4">
+                <div class="col-md-6 my-4">
+                    <h6 class="my-2">Have a question or want to work together?</h6>
+                    <p>The best ways to contact me are via email or through the LinkedIn link in the footer below.</p>
+                    <p>I am currently seeking a junior web developer position but am open to other software development
+                        opportunities as well!</p>
+                </div>
+                <div class="col-md-4 offset-md-2 my-4">
+                    <h6 class="my-2">How can you reach me?</h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            Phone: <a class="contact-link" href="tel:216-402-7319">216-402-7319</a>
+                        </li>
+                        <li>
+                            Email: <a class="contact-link"
+                                href="mailto:Terrell.r.payne@gmail.com">terrell.r.payne@gmail.com</a>
+                        </li>
+                        <li>
+                            Resume: <a class="contact-link" href="assets/files/resume.pdf" download>PDF</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="p-4 bg-dark">
+        <div class="text-center my-4" id="footer-links">
+            <a href="https://www.linkedin.com/in/terrell-payne-0a9b2a172/" target="_blank">
+                <i class="p-3 mx-2 fab fa-lg fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/TerrellPayne" target="_blank">
+                <i class="p-3 mx-2 fab fa-lg fa-github"></i>
+            </a>
+            <a href=" " target="_blank">
+                <i class="p-3 mx-2 fab fa-lg fa-codepen"></i>
+            </a>
+        </div>
+        <p class="text-center" id="copyright">Copyright &copy;
+            <script>
+                var d = new Date()
+                document.write(d.getFullYear())
+            </script>
+            <a class="copyright-link" href="https://github.com/TerrellPayne" target="_blank"> Terrell Payne</a>
+        </p>
+    </footer>
+
+    <div class="modal fade" id="modal-learn-more" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="learn-more-title">Title</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body pb-4">
+                    <h6 id="learn-more-subtitle">Subtitle</h6>
+                    <p id="learn-more-description"></p>
+                </div>
+                <div class="modal-footer">
+                    <a class="modal-link p-2 mx-2" id="link-repo" href="https://github.com/TerrellPayne"
+                        target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a class="modal-link p-2 mx-2" id="link-live" href="#" target="_blank"><i
+                            class="fas fa-angle-right"></i> View Site</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

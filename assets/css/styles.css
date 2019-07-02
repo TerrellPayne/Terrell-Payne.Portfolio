@@ -1,0 +1,236 @@
+:root {
+    --main-color: #0893C8;
+    --complimentary-color: #FF8500;
+    --dark-color: #17181A;
+    --dark-gray-color: #383838;
+    --gray-color: #343434;
+    --light-color: #f5f5f5;
+    --white-color: #fff;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 75vh;
+}
+
+section:not(:first-child) {
+    /* Offset for navbar */
+   padding-top: 59px;
+}
+
+
+/* HOME */
+#home {
+    min-height: 100vh;
+    background: var(--gray-color);
+    /* background-image: url(../images/footer_lodyas.png); */
+    color: var(--white-color);
+    animation: animatedBackground 30s ease-in-out infinite alternate;
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0% 0%; }
+	to { background-position: 500% 0%; }
+}
+
+/* VIEW WORK BUTTON */
+#btn-view-work {
+    background: none;
+    border: 3px solid var(--white-color);
+    color: var(--white-color);
+    transition: all 0.3s ease-in-out;
+}
+
+#btn-view-work:hover {
+    background: var(--complimentary-color);
+    border: 3px solid var(--complimentary-color);
+}
+
+#btn-view-work i {
+    transition: all 0.3s ease-in-out;
+}
+
+#btn-view-work:hover i{
+    transform-origin: center;
+    transform: rotate(90deg);
+}
+
+/* NAVBAR */
+nav {
+    z-index: 2;
+}
+.navbar {
+    border-bottom: 4px solid var(--main-color);
+    position: sticky;
+    top: 0px;
+}
+
+.navbar-dark .navbar-nav .nav-item .nav-link {
+    transition: all 0.3s ease-in-out;
+    color: var(--white-color);
+}
+
+.navbar-dark .navbar-nav .nav-item.active .nav-link {
+    color: var(--complimentary-color);
+}
+
+.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+    color: var(--complimentary-color);
+}
+
+/* ABOUT */
+#profile-img {
+    /* max-width: 15em; */
+    width: 100%;
+    border: 1px solid var(--dark-color);
+}
+
+/* PROGRESS BARS */
+.progress {
+    background: #ddd !important;
+    height: 2em;
+}
+
+.progress-bar {
+    background: var(--main-color) !important;
+}
+
+/* PORTFOLIO */
+.card, .card-img {
+    border: none;
+    border-radius: 0;
+    background: none;
+}
+.card-img-overlay {
+    opacity: 0;
+}
+.project .card-img, .project .card-img-overlay {
+    transition: all 0.5s ease-in-out;
+}
+
+.project:hover .card-img {
+    opacity: 0;
+}
+
+.project:hover .card-img-overlay {
+    opacity: 1;
+}
+
+.btn-learn-more {
+    background: inherit;
+    border: 3px solid var(--complimentary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-learn-more:hover {
+    background: var(--complimentary-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.modal-link {
+    color: var(--white-color);    
+    background: var(--complimentary-color);
+    border: 3px solid var(--complimentary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-link:hover {
+    color: var(--complimentary-color);
+    text-decoration: none;
+    background: none;
+}
+
+
+/* CONTACT */
+.contact-link {
+    color: var(--main-color);
+    transition: all 0.15s ease-in-out;
+}
+
+.contact-link:hover {
+    color: var(--main-color);
+    opacity: 0.75;
+}
+
+/* FOOTER */
+#footer-links i {
+    background: var(--gray-color);
+    transition: all 0.2s ease-in-out;
+}
+
+#footer-links i:hover {
+    background: var(--main-color);
+}
+
+#footer-links a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.copyright-link {
+    color: var(--main-color);
+    transition: all 0.15s ease-in-out;
+}
+
+.copyright-link:hover {
+    color: var(--main-color);
+    opacity: 0.75;
+}
+
+/* GENERAL CLASSES */
+.px-0 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.justify-self-center {
+    justify-self: center;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.text-primary {
+    color: var(--main-color) !important;
+}
+
+.text-secondary {
+    color: var(--complimentary-color) !important;
+}
+
+.bg-light {
+    background: var(--light-color) !important;
+}
+
+.bg-white {
+    background: var(--white-color) !important;
+}
+
+.bg-dark {
+    background: var(--dark-color) !important;
+    color: var(--light-color) !important;
+}
+
+@media (max-width: 472px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .display-4 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 387px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
