@@ -98,6 +98,13 @@ const projects = {
         liveLink: "https://firefightersfriend.herokuapp.com/"
         
     },
+    LIRIBOT: {
+        title: "LIRIBOT",
+        subtitle: "A search application built using Nodejs and multiple API's",
+        description: "Search for information about movies, concert dates or your favorites songs",
+        repoLink: "https://github.com/TerrellPayne/liriBot",
+        liveLink: "",
+    }
     
 }
     
